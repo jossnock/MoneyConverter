@@ -1,0 +1,19 @@
+body{
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: #4874c4;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-family: 'Comic Sans MS';
+    margin-bottom: auto;
+}
+
+input{
+    width: 40%;
+    height: 900%;
+}

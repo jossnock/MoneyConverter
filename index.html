@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Money Converter</h1>
+    <h1>What's it worth?</h1>
 
+    <p>Pounds Sterling (GBP): </p>
+    <input id="GBPs" type="text" value=""><br>
+    <input type="button" onclick="convertAndReplace('GBPs')" value="Convert">
 
+    <p>Euros (EUR):</p>
+    <input id="EURs" type="text" value=""><br>
+    <input type="button" onclick="convertAndReplace('EURs')" value="Convert">
+
+    <p>Exchange rate: 1 GBP = 1.18 EUR</p>
 
 </body>
 </html>

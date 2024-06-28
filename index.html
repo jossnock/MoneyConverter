@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload = "populateCurrencyDataAsync(); getExchangeRate('GBP', 'EUR')">
     <h1>What's it worth?</h1>
 
     <p>Pounds Sterling (GBP): </p>
-    <input id="GBPs" type="text" value=""><br>
-    <input type="button" onclick="convertAndReplace('GBPs')" value="Convert">
+    <input id="GBP" type="text" value=""><br>
+    <input type="button" onclick="convertAndReplace('GBP', 'EUR')" value="Convert">
 
     <p>Euros (EUR):</p>
-    <input id="EURs" type="text" value=""><br>
-    <input type="button" onclick="convertAndReplace('EURs')" value="Convert">
+    <input id="EUR" type="text" value=""><br>
+    <input type="button" onclick="convertAndReplace('EUR', 'GBP')" value="Convert">
 
-    <p>Exchange rate: 1 GBP = 1.18 EUR</p>
+    <p id="exRt"></p>
 
 </body>
 </html>
